@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Future Mirror AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>🔮 Future Mirror AI</h1>
+
+    <form method="POST">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="text" name="interest" placeholder="Your Interest">
+        <input type="text" name="strength" placeholder="Your Strength">
+        <input type="number" name="study_hours" placeholder="Study Hours Per Day">
+        <input type="number" name="mobile_hours" placeholder="Mobile Usage Hours Per Day">
+        <input type="text" name="habit" placeholder="Your Daily Habit">
+        <input type="text" name="question" placeholder="Ask Your Career Question">
+
+        <button type="submit">Analyze My Future</button>
+    </form>
+
+    <pre>{{ answer }}</pre>
+</div>
+
+</body>
+</html>
